@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: lightgoldenrodyellow;
+}
+h1,h2 {
+    text-transform: uppercase;
+}
+header, main {
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+}
+header {
+    background-color: navy;
+    margin-bottom: 10px;
+}
+
+main {
+    background-color: darkslategray;
+}
+
+main p:first-child {
+    color: indigo;
+}
+main p:nth-child(2) {
+    color: crimson;
+}
+main p:last-child {
+    color: green;
+}
+
