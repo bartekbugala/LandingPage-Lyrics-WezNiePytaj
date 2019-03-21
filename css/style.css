@@ -4,22 +4,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-color: black;
-    background-image: url('https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: lightgoldenrodyellow;
-    font-family: 'Kalam', cursive;
-}
-
 .clearfix::before,
 .clearfix::after {
 content:"";
 display: table ;
 clear: both;
 }
+
+
+
+/*
+body {
+    background-color: black;
+    background-image: url('https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fafad2;
+    font-family: 'Kalam', cursive;
+}
+
+
 
 h1, h2 {
     text-transform: uppercase;
@@ -33,20 +37,14 @@ header, main {
 }
 header {
     background-color: rgb(33, 33, 33, 0.8);
-    margin-bottom: 10px;
+
 }
 
 main {
-    margin-top: 500px;
+
 
 }
-main h2 {
-    display: block;
-    width: 100%;                        
-    margin-bottom: 50px;
-    background-color: rgb(33, 33, 33, 0.8);
-    border-radius: 10px;
-}
+
 main div {
     display: block;
     float: left;
@@ -56,12 +54,12 @@ main div {
 main div p {
     padding: 20px;
     background-color: rgb(33, 33, 33, 0.8);
-    margin: 10px;
+
     border-radius: 10px;
     text-align: center;
 }
 
-main div:nth-child(3) p {
+main div:nth-child(2) p {
     color: crimson;
 }
 
@@ -77,4 +75,5 @@ main div:nth-child(3) p {
         width: 100%;
     }
 }
+*/
 
