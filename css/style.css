@@ -15,6 +15,25 @@ body {
   display: table;
   clear: both; }
 
+a {
+  text-decoration: none; }
+  a button {
+    border: none;
+    text-decoration: none;
+    margin-top: 30px;
+    font-family: 'Reenie Beanie', cursive;
+    padding: 8px 25px 8px;
+    background-color: #fafad2;
+    color: #000;
+    border-radius: 50px;
+    font-size: 50px;
+    filter: drop-shadow(0 0 5px #000);
+    transition: color .3s linear, background-color .3s linear; }
+    a button:hover {
+      background-color: #000;
+      color: #fafad2;
+      cursor: pointer; }
+
 header {
   position: relative;
   height: 100vh;
@@ -53,28 +72,13 @@ header {
   header h2 {
     filter: drop-shadow(0 0 5px #000);
     font-size: 60px; }
-  header button {
-    border: none;
-    margin-top: 30px;
-    font-family: 'Reenie Beanie', cursive;
-    padding: 8px;
-    background-color: #fafad2;
-    color: #000;
-    border-radius: 5px;
-    font-size: 50px;
-    filter: drop-shadow(0 0 5px #000);
-    transition: color .3s linear, background-color .3s linear; }
-    header button:hover {
-      background-color: #000;
-      color: #fafad2;
-      cursor: pointer; }
 
 section {
   height: 100vh;
   background-color: #000;
   color: #fafad2; }
   section article {
-    padding-top: 50px;
+    padding-top: 100px;
     width: 80%;
     margin: 0 auto; }
     section article div {
@@ -86,5 +90,26 @@ section {
         font-size: 18px; }
         section article div p:hover {
           color: #008000; }
+  section button {
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+
+@media (max-width: 1199px) {
+  header {
+    height: 30vh; }
+    header img {
+      display: none; }
+
+  section {
+    height: 200vh; }
+    section article div {
+      width: 100%; }
+      section article div p {
+        font-family: 'Itim', cursive;
+        font-size: 18px; }
+        section article div p:hover {
+          color: #fafad2; } }
 
 /*# sourceMappingURL=style.css.map */
