@@ -7,7 +7,7 @@ body {
   background-image: url("https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: fixed; }
+  background-attachment: fixed; }
 
 .clearfix::before,
 .clearfix::after {
@@ -74,7 +74,7 @@ header {
     font-size: 60px; }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #000;
   color: #fafad2; }
   section article {
@@ -97,19 +97,27 @@ section {
     margin-right: auto; }
 
 @media (max-width: 1199px) {
+  a button {
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 30px; }
+
   header {
-    height: 30vh; }
+    height: 50vh;
+    justify-content: center; }
     header img {
       display: none; }
+    header h1,
+    header h2 {
+      font-size: 30px; }
 
-  section {
-    height: 200vh; }
-    section article div {
-      width: 100%; }
-      section article div p {
-        font-family: 'Itim', cursive;
-        font-size: 18px; }
-        section article div p:hover {
-          color: #fafad2; } }
+  section article div {
+    width: 100%; }
+    section article div p {
+      font-family: 'Itim', cursive;
+      font-size: 18px; }
+      section article div p:hover {
+        color: #fafad2; } }
 
 /*# sourceMappingURL=style.css.map */

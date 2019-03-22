@@ -12,7 +12,7 @@ body {
     background-image: url('https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
+    background-attachment: fixed;
 }
 
 .clearfix::before,
@@ -24,6 +24,7 @@ body {
 
 a {
     text-decoration: none;
+
     button {
         border: none;
         text-decoration: none;
@@ -36,6 +37,7 @@ a {
         font-size: 50px;
         filter: drop-shadow(0 0 5px $color-0);
         transition: color .3s linear, background-color .3s linear;
+
         &:hover {
             background-color: $color-0;
             color: $color-1;
@@ -64,16 +66,19 @@ header {
             top: 0;
             left: 0;
         }
+
         &:nth-child(2) {
             transform: scaleX(-1);
             top: 0;
             right: 0;
         }
+
         &:nth-child(3) {
             transform: scaleY(-1);
             bottom: 0;
             left: 0;
         }
+
         &:nth-child(4) {
             transform: scale(-1, -1);
             bottom: 0;
@@ -96,26 +101,31 @@ header {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $color-0;
     color: $color-1;
+
     article {
         padding-top: 100px;
         width: 80%;
         margin: 0 auto;
+
         div {
             float: left;
             width: 33.33%;
             text-align: center;
+
             p {
                 font-family: 'Itim', cursive;
                 font-size: 18px;
+
                 &:hover {
                     color: $color-3;
                 }
             }
         }
     }
+
     button {
         display: block;
         width: 250px;
@@ -123,22 +133,43 @@ section {
         margin-right: auto;
     }
 }
+
 @media (max-width: 1199px) {
+    header {}
+
+    a button {
+        font-size: 20px;
+        width: 150px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
     header {
-        height: 30vh;
+        height: 50vh;
+        justify-content: center;
+
         img {
             display: none;
         }
+
+        h1,
+        h2 {
+            font-size: 30px;
+        }
     }
+
     section {
-        height: 200vh;
-        article div {
-            width: 100%;
-            p {
-                font-family: 'Itim', cursive;
-                font-size: 18px;
-                &:hover {
-                    color: $color-1;
+        article {
+            div {
+                width: 100%;
+
+                p {
+                    font-family: 'Itim', cursive;
+                    font-size: 18px;
+
+                    &:hover {
+                        color: $color-1;
+                    }
                 }
             }
         }
