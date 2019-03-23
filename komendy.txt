@@ -1,0 +1,12 @@
+# URUCHAMIAM BROWSER-SYNC
+node_modules/.bin/browser-sync start --server --files "css/*.css" "*.html"
+
+# SPRAWDZAM OPCJE I SKŁADNIĘ AUTOPREFIXER
+node_modules/.bin/autoprefixer-cli -h
+# URUCHAMIAM PREFIXERA DLA PLIKU STYLE.CSS WYNIKOWY STYLE.PREFIXED.CSS
+node_modules/.bin/autoprefixer-cli -o css/style.prefixed.css css/style.css
+
+# SPRAWDZAM OPCJE I SKŁADNIĘ nu-html
+node_modules/.bin/nu-html-checker -h
+# URUCHAMIAM GO DLA PLIKU INDEX.HTML
+node_modules/.bin/nu-html-checker index.html
