@@ -15,24 +15,22 @@ body {
   display: table;
   clear: both; }
 
-a {
-  text-decoration: none; }
-  a button {
-    border: none;
-    text-decoration: none;
-    margin-top: 30px;
-    font-family: 'Reenie Beanie', cursive;
-    padding: 8px 25px 8px;
-    background-color: #fafad2;
-    color: #000;
-    border-radius: 50px;
-    font-size: 40px;
-    filter: drop-shadow(0 0 5px #000);
-    transition: color .3s linear, background-color .3s linear; }
-    a button:hover {
-      background-color: #000;
-      color: #fafad2;
-      cursor: pointer; }
+a.btn {
+  border: none;
+  text-decoration: none;
+  margin-top: 30px;
+  font-family: 'Reenie Beanie', cursive;
+  padding: 8px 25px 8px;
+  background-color: #fafad2;
+  color: #000;
+  border-radius: 50px;
+  font-size: 50px;
+  filter: drop-shadow(0 0 5px #000);
+  transition: color .3s linear, background-color .3s linear; }
+  a.btn:hover {
+    background-color: #000;
+    color: #fafad2;
+    cursor: pointer; }
 
 header {
   position: relative;
@@ -90,14 +88,14 @@ section {
         font-size: 18px; }
         section article div p:hover {
           color: #008000; }
-  section button {
+  section a.btn {
     display: block;
     width: 250px;
     margin-left: auto;
     margin-right: auto; }
 
 @media (max-width: 1199px) {
-  a button {
+  a.btn {
     font-size: 20px;
     width: 150px;
     text-align: center;

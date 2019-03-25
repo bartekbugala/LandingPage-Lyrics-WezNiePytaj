@@ -24,29 +24,24 @@ body {
     clear: both;
 }
 
-a {
+a.btn {
+    border: none;
     text-decoration: none;
-
-    button {
-        border: none;
-        text-decoration: none;
-        margin-top: 30px;
-        font-family: 'Reenie Beanie', cursive;
-        padding: 8px 25px 8px;
-        background-color: $color-1;
-        color: $color-0;
-        border-radius: 50px;
-        font-size: 50px;
-        filter: drop-shadow(0 0 5px $color-0);
-        transition: color .3s linear, background-color .3s linear;
-
-        &:hover {
-            background-color: $color-0;
-            color: $color-1;
-            cursor: pointer;
+    margin-top: 30px;
+    font-family: 'Reenie Beanie', cursive;
+    padding: 8px 25px 8px;
+    background-color: $color-1;
+    color: $color-0;
+    border-radius: 50px;
+    font-size: 50px;
+    filter: drop-shadow(0 0 5px $color-0);
+    transition: color .3s linear, background-color .3s linear;
+    &:hover {
+        background-color: $color-0;
+        color: $color-1;
+        cursor: pointer;
         }
     }
-}
 
 header {
     position: relative;
@@ -128,7 +123,7 @@ section {
         }
     }
 
-    button {
+    a.btn {
         display: block;
         width: 250px;
         margin-left: auto;
@@ -137,9 +132,7 @@ section {
 }
 
 @media (max-width: 1199px) {
-    header {}
-
-    a button {
+    a.btn {
         font-size: 20px;
         width: 150px;
         text-align: center;
