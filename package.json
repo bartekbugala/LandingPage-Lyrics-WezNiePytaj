@@ -15,5 +15,13 @@
     "nu-html-checker": "^0.1.0",
     "extend": ">=2.0.2",
     "superagent": ">=3.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartekbugala/git-learning-2b.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bartekbugala/git-learning-2b/issues"
+  },
+  "homepage": "https://github.com/bartekbugala/git-learning-2b#readme"
 }

@@ -25,23 +25,26 @@ body {
 }
 
 a.btn {
+    display: inline-block;
+    text-decoration: none;
     border: none;
     text-decoration: none;
-    margin-top: 30px;
+    text-align: center;
+    margin-top: 25px;
     font-family: 'Reenie Beanie', cursive;
     padding: 8px 25px 8px;
     background-color: $color-1;
     color: $color-0;
-    border-radius: 50px;
-    font-size: 50px;
+    border-radius: 30px;
+    font-size: 35px;
     filter: drop-shadow(0 0 5px $color-0);
     transition: color .3s linear, background-color .3s linear;
     &:hover {
         background-color: $color-0;
         color: $color-1;
         cursor: pointer;
-        }
     }
+}
 
 header {
     position: relative;
@@ -106,6 +109,13 @@ section {
         padding-top: 100px;
         width: 80%;
         margin: 0 auto;
+        h3 {
+            display: block;
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 20px;
+            font-family: 'Reenie Beanie', cursive;
+        }
 
         div {
             float: left;
@@ -132,6 +142,7 @@ section {
 }
 
 @media (max-width: 1199px) {
+
     a.btn {
         font-size: 20px;
         width: 150px;
